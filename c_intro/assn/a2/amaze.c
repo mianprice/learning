@@ -116,6 +116,31 @@ void amaze7() {
 	printf("\n");
 }
 
+void amaze8() {
+	int i = 1;
+	int count = 0;
+	printf("  amaze8:\t");
+	for (;;) {
+		loop_s:
+		if (i >= 10) goto end;
+		if (i % 2 == 1) {
+			goto odd;
+		} else {
+			goto even;
+		}
+		loop_e:
+		i++;
+	}
+	odd:
+	printf("%d ",i);
+	goto loop_e;
+	even:
+	i++;
+	goto loop_s;
+	end:
+	printf("\n");
+}
+
 
 int main() {
 	amazeWOW();
@@ -126,5 +151,6 @@ int main() {
 	amaze5();
 	amaze6();
 	amaze7();
+	amaze8();
 	return 0;
 }
