@@ -18,7 +18,6 @@ int main() {
 	printf("%s\n",str2);
 
 	free(str);
-	free(str2);
 	printf("%s\n", str);
 
 	return 0;
