@@ -5,12 +5,14 @@
 typedef struct node {
 	int node_id;
 	int data;
-	int* left;
-	int* right;
+	struct node *left;
+	struct node *right;
 } node;
 
 ///*** DO NOT CHANGE ANY FUNCTION DEFINITIONS ***///
 // Declare the tree modification functions below...
+
+void inorder(struct node *root);
 
 void insert_node(int node_id, int data);
 

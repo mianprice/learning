@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "bintree.h"
 
 int main() {
@@ -11,5 +12,19 @@ int main() {
 	won't work!
 	*/
 
+	node *root = NULL;
+	root = malloc(sizeof(node));
+	printf("helllooooooo");
+	insert_node(5,5);
+
+	insert_node(7,7);
+	insert_node(3,3);
+	insert_node(6,6);
+	insert_node(4,4);
+	insert_node(2,2);
+	insert_node(8,8);
+
+	inorder(root);
+	free(root);
 	return 0;
 }
